@@ -1,0 +1,759 @@
+<%- include('./header.ejs') %>
+       
+      <div class="contai mb-4">
+         <h2 >Welcome To Our College,</h2>
+         <h4 >We <span class="text-warning">Empower Education</span> That You Need</h4>
+         <img src="./Images/slider-bottom-pattern.png" alt="/">
+
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <center>
+        <h1 class="fw-bold mb-5" style="color: #043577;">
+          Why Choose Our College
+        </h1>
+      </center>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center p-4">
+            <div class="card d-flex flex-column justify-content-center align-items-center pt-4" style="width: 18rem;">
+              <img class="card-img-top updt" src="./Images/cous.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Courses</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center p-4">
+            <div class="card d-flex flex-column justify-content-center align-items-center pt-4" style="width: 18rem;">
+              <img class="card-img-top" src="./Images/pb.jpg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Public Speaking</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center p-4">
+            <div class="card d-flex flex-column justify-content-center align-items-center pt-4" style="width: 18rem;">
+              <img class="card-img-top" src="./Images/lb.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Library</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center p-4">
+            <div class="card justify-content-center align-items-center pt-4" style="width: 18rem;">
+              <img class="card-img-top" src="./Images/runi.jpeg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sports</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center p-4">
+            <div class="card d-flex justify-content-center align-items-center pt-4" style="width: 18rem;">
+              <img class="card-img-top" src="./Images/sh.jpg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Workshop</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center align-items-center p-4">
+            <div class="card d-flex flex-column justify-content-center align-items-center pt-4" style="width: 18rem;">
+              <img class="card-img-top updt" src="./Images/cous.png" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">course</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <center>
+        <h1 class="mt-5">
+          Online Courses
+        </h1>
+      </center>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <div class="card">
+              <img class="card-img-top h w-100" src="./Images/cours.jpg" alt="Card image cap" style="height:211px">
+              <div class="card-body">
+                <h5 class="card-title">B.Sc</h5>
+                <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="d-flex flex-row justify-content-between">
+                <div class="st">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                </div>
+                <div class="bt">
+                    <% if(bsc){%>
+                        <a href="/courseDisplay" class="btn btcl">Course Display</a>
+                        <%}else{%>
+                            <button type="button" class="btn btcl" data-bs-toggle="modal"
+                                data-bs-target="#bsc">Register</button>
+                            <% } %>
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <div class="card" >
+              <img class="card-img-top h w-100" src="./Images/coursd.jpg" alt="Card image cap" style="height:211px">
+              <div class="card-body">
+                <h5 class="card-title ">B.Tech</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="d-flex flex-row justify-content-between">
+                <div class="st">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+              </div>
+              <div class="bt">
+                <% if(btech){%>
+                    <a href="/courseDisplay" class="btn btcl">Course Display</a>
+                    <%}else{%>
+                        <button type="button" class="btn btcl" data-bs-toggle="modal"
+                            data-bs-target="#btech">Register</button>
+                        <% } %>
+                 
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <div class="card" >
+              <img class="card-img-top h w-100" src="./Images/courst.jpg" alt="Card image cap" style="height:211px">
+              <div class="card-body">
+                <h5 class="card-title">BCA</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="d-flex flex-row justify-content-between">
+                <div class="st">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                 
+                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                </div>
+                <div class="bt">
+                    <% if(bca){%>
+                        <a href="/courseDisplay" class="btn btcl">Course Display</a>
+                        <%}else{%>
+                            <button type="button" class="btn btcl" data-bs-toggle="modal"
+                                data-bs-target="#bca">Register</button>
+                            <% } %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <div class="card" >
+              <img class="card-img-top h w-100" src="./Images/coursv.jpg" alt="Card image cap" style="height:211px">
+              <div class="card-body">
+                <h5 class="card-title">BCom</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="d-flex flex-row justify-content-between">
+                <div class="st">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B;"></i>
+                </div>
+                <div class="bt">
+                    <% if(bcom){%>
+                        <a href="/courseDisplay" class="btn btcl">Course Display</a>
+                        <%}else{%>
+                            <button type="button" class="btn btcl" data-bs-toggle="modal"
+                                data-bs-target="#bcom">Register</button>
+                            <% } %> 
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <div class="card" >
+              <img class="card-img-top h w-100" src="./Images/coursy.jpg" alt="Card image cap" style="height:211px">
+              <div class="card-body">
+                <h5 class="card-title">BBA</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="d-flex flex-row justify-content-between">
+                <div class="st">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="bt">
+                    <% if(bba){%>
+                        <a href="/courseDisplay" class="btn btcl">Course Display</a>
+                        <%}else{%>
+                            <button type="button" class="btn btcl" data-bs-toggle="modal"
+                                data-bs-target="#bba">Register</button>
+                            <% } %>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-4 p-3">
+            <div class="card" >
+              <img class="card-img-top h w-100" src="./Images/coursb.jpg" alt="Card image cap" style="height:211px">
+              <div class="card-body">
+                <h5 class="card-title">BE</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="d-flex flex-row justify-content-between">
+                <div class="st">
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </div>
+                <div class="bt">
+                    <% if(be){%>
+                        <a href="/courseDisplay" class="btn btcl">Course Display</a>
+                        <%}else{%>
+                            <button type="button" class="btn btcl" data-bs-toggle="modal"
+                                data-bs-target="#be">Register</button>
+                            <% } %>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <div class="modal fade" id="btech" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Course Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="/course_insert" method="post" id="courseForm">
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" value="<%= n %>" name="name" class="form-control" id="name" required />
+                            <div class="invalid-feedback">Name is required.</div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" value="<%= e %>" name="email" class="form-control" id="email"
+                                required />
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone No.</label>
+                            <input type="text" name="phone" class="form-control" id="phone" maxlength="10"
+                                pattern="\d{10}" required />
+                            <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+                        </div>
+
+                        <!-- DOB -->
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">DOB</label>
+                            <input type="date" name="dob" class="form-control" id="dob" required />
+                            <div class="invalid-feedback">Please select your date of birth.</div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea name="address" class="form-control" id="address" required></textarea>
+                            <div class="invalid-feedback">Address is required.</div>
+                        </div>
+
+                        <!-- Gender -->
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <div>
+                                <input type="radio" name="gender" value="male" id="male" required />
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" value="female" id="female" required />
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="invalid-feedback">Please select your gender.</div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="mb-3">
+                            <label for="education" class="form-label">Education</label>
+                            <select name="education" class="form-select" id="education" required>
+                                <option value="">Select education</option>
+                                <option value="10">10th</option>
+                                <option value="12">12th</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your education level.</div>
+                        </div>
+
+                        <!-- Course -->
+                        <div class="mb-3">
+                            <label for="course" class="form-label">Course</label>
+                            <input type="text" value="btech" readonly class="form-control" name="course" id="course" />
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--BCA Modal -->
+    <div class="modal fade" id="bca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Course Register</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form action="/course_insert" method="post" id="courseForm">
+                      <!-- Name -->
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" value="<%= n %>" name="name" class="form-control" id="name" required />
+                          <div class="invalid-feedback">Name is required.</div>
+                      </div>
+
+                      <!-- Email -->
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" value="<%= e %>" name="email" class="form-control" id="email"
+                              required />
+                          <div class="invalid-feedback">Please enter a valid email address.</div>
+                      </div>
+
+                      <!-- Phone -->
+                      <div class="mb-3">
+                          <label for="phone" class="form-label">Phone No.</label>
+                          <input type="text" name="phone" class="form-control" id="phone" maxlength="10"
+                              pattern="\d{10}" required />
+                          <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+                      </div>
+
+                      <!-- DOB -->
+                      <div class="mb-3">
+                          <label for="dob" class="form-label">DOB</label>
+                          <input type="date" name="dob" class="form-control" id="dob" required />
+                          <div class="invalid-feedback">Please select your date of birth.</div>
+                      </div>
+
+                      <!-- Address -->
+                      <div class="mb-3">
+                          <label for="address" class="form-label">Address</label>
+                          <textarea name="address" class="form-control" id="address" required></textarea>
+                          <div class="invalid-feedback">Address is required.</div>
+                      </div>
+
+                      <!-- Gender -->
+                      <div class="mb-3">
+                          <label class="form-label">Gender</label>
+                          <div>
+                              <input type="radio" name="gender" value="male" id="male" required />
+                              <label for="male">Male</label>
+                              <input type="radio" name="gender" value="female" id="female" required />
+                              <label for="female">Female</label>
+                          </div>
+                          <div class="invalid-feedback">Please select your gender.</div>
+                      </div>
+
+                      <!-- Education -->
+                      <div class="mb-3">
+                          <label for="education" class="form-label">Education</label>
+                          <select name="education" class="form-select" id="education" required>
+                              <option value="">Select education</option>
+                              <option value="10">10th</option>
+                              <option value="12">12th</option>
+                          </select>
+                          <div class="invalid-feedback">Please select your education level.</div>
+                      </div>
+
+                      <!-- Course -->
+                      <div class="mb-3">
+                          <label for="course" class="form-label">Course</label>
+                          <input type="text" value="BCA" readonly class="form-control" name="course" id="course" />
+                      </div>
+
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-success w-100">Submit</button>
+                  </form>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <!--End bca Modal -->
+
+  <!--BBA Modal -->
+  <div class="modal fade" id="bba" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Course Register</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form action="/course_insert" method="post" id="courseForm">
+                      <!-- Name -->
+                      <div class="mb-3">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" value="<%= n %>" name="name" class="form-control" id="name" required />
+                          <div class="invalid-feedback">Name is required.</div>
+                      </div>
+
+                      <!-- Email -->
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" value="<%= e %>" name="email" class="form-control" id="email"
+                              required />
+                          <div class="invalid-feedback">Please enter a valid email address.</div>
+                      </div>
+
+                      <!-- Phone -->
+                      <div class="mb-3">
+                          <label for="phone" class="form-label">Phone No.</label>
+                          <input type="text" name="phone" class="form-control" id="phone" maxlength="10"
+                              pattern="\d{10}" required />
+                          <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+                      </div>
+
+                      <!-- DOB -->
+                      <div class="mb-3">
+                          <label for="dob" class="form-label">DOB</label>
+                          <input type="date" name="dob" class="form-control" id="dob" required />
+                          <div class="invalid-feedback">Please select your date of birth.</div>
+                      </div>
+
+                      <!-- Address -->
+                      <div class="mb-3">
+                          <label for="address" class="form-label">Address</label>
+                          <textarea name="address" class="form-control" id="address" required></textarea>
+                          <div class="invalid-feedback">Address is required.</div>
+                      </div>
+
+                      <!-- Gender -->
+                      <div class="mb-3">
+                          <label class="form-label">Gender</label>
+                          <div>
+                              <input type="radio" name="gender" value="male" id="male" required />
+                              <label for="male">Male</label>
+                              <input type="radio" name="gender" value="female" id="female" required />
+                              <label for="female">Female</label>
+                          </div>
+                          <div class="invalid-feedback">Please select your gender.</div>
+                      </div>
+
+                      <!-- Education -->
+                      <div class="mb-3">
+                          <label for="education" class="form-label">Education</label>
+                          <select name="education" class="form-select" id="education" required>
+                              <option value="">Select education</option>
+                              <option value="10">10th</option>
+                              <option value="12">12th</option>
+                          </select>
+                          <div class="invalid-feedback">Please select your education level.</div>
+                      </div>
+
+                      <!-- Course -->
+                      <div class="mb-3">
+                          <label for="course" class="form-label">Course</label>
+                          <input type="text" value="BBA" readonly class="form-control" name="course" id="course" />
+                      </div>
+
+                      <!-- Submit Button -->
+                      <button type="submit" class="btn btn-success w-100">Submit</button>
+                  </form>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <!--BCA Modal -->
+  <div class="modal fade" id="bcom" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Course Register</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/course_insert" method="post" id="courseForm">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" value="<%= n %>" name="name" class="form-control" id="name" required />
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" value="<%= e %>" name="email" class="form-control" id="email"
+                            required />
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone No.</label>
+                        <input type="text" name="phone" class="form-control" id="phone" maxlength="10"
+                            pattern="\d{10}" required />
+                        <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+                    </div>
+
+                    <!-- DOB -->
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">DOB</label>
+                        <input type="date" name="dob" class="form-control" id="dob" required />
+                        <div class="invalid-feedback">Please select your date of birth.</div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea name="address" class="form-control" id="address" required></textarea>
+                        <div class="invalid-feedback">Address is required.</div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <div>
+                            <input type="radio" name="gender" value="male" id="male" required />
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female" required />
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="invalid-feedback">Please select your gender.</div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="mb-3">
+                        <label for="education" class="form-label">Education</label>
+                        <select name="education" class="form-select" id="education" required>
+                            <option value="">Select education</option>
+                            <option value="10">10th</option>
+                            <option value="12">12th</option>
+                        </select>
+                        <div class="invalid-feedback">Please select your education level.</div>
+                    </div>
+
+                    <!-- Course -->
+                    <div class="mb-3">
+                        <label for="course" class="form-label">Course</label>
+                        <input type="text" value="BCOM" readonly class="form-control" name="course" id="course" />
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-success w-100">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--End bca Modal -->
+
+<!--MCA Modal -->
+<div class="modal fade" id="be" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Course Register</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/course_insert" method="post" id="courseForm">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" value="<%= n %>" name="name" class="form-control" id="name" required />
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" value="<%= e %>" name="email" class="form-control" id="email"
+                            required />
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone No.</label>
+                        <input type="text" name="phone" class="form-control" id="phone" maxlength="10"
+                            pattern="\d{10}" required />
+                        <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+                    </div>
+
+                    <!-- DOB -->
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">DOB</label>
+                        <input type="date" name="dob" class="form-control" id="dob" required />
+                        <div class="invalid-feedback">Please select your date of birth.</div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea name="address" class="form-control" id="address" required></textarea>
+                        <div class="invalid-feedback">Address is required.</div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <div>
+                            <input type="radio" name="gender" value="male" id="male" required />
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female" required />
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="invalid-feedback">Please select your gender.</div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="mb-3">
+                        <label for="education" class="form-label">Education</label>
+                        <select name="education" class="form-select" id="education" required>
+                            <option value="">Select education</option>
+                            <option value="10">10th</option>
+                            <option value="12">12th</option>
+                        </select>
+                        <div class="invalid-feedback">Please select your education level.</div>
+                    </div>
+
+                    <!-- Course -->
+                    <div class="mb-3">
+                        <label for="course" class="form-label">Course</label>
+                        <input type="text" value="BE" readonly class="form-control" name="course" id="course" />
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-success w-100">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="bsc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Course Register</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/course_insert" method="post" id="courseForm">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" value="<%= n %>" name="name" class="form-control" id="name" required />
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" value="<%= e %>" name="email" class="form-control" id="email"
+                            required />
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone No.</label>
+                        <input type="text" name="phone" class="form-control" id="phone" maxlength="10"
+                            pattern="\d{10}" required />
+                        <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+                    </div>
+
+                    <!-- DOB -->
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">DOB</label>
+                        <input type="date" name="dob" class="form-control" id="dob" required />
+                        <div class="invalid-feedback">Please select your date of birth.</div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea name="address" class="form-control" id="address" required></textarea>
+                        <div class="invalid-feedback">Address is required.</div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <div>
+                            <input type="radio" name="gender" value="male" id="male" required />
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female" required />
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="invalid-feedback">Please select your gender.</div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="mb-3">
+                        <label for="education" class="form-label">Education</label>
+                        <select name="education" class="form-select" id="education" required>
+                            <option value="">Select education</option>
+                            <option value="10">10th</option>
+                            <option value="12">12th</option>
+                        </select>
+                        <div class="invalid-feedback">Please select your education level.</div>
+                    </div>
+
+                    <!-- Course -->
+                    <div class="mb-3">
+                        <label for="course" class="form-label">Course</label>
+                        <input type="text" value="BSC" readonly class="form-control" name="course" id="course" />
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-success w-100">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>    
+<%- include('./footer.ejs') %>

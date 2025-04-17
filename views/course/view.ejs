@@ -1,0 +1,61 @@
+<%- include('../header.ejs') %>
+<div class="abcontai mb-4" style="height: 400px;padding-top: 160px;">
+    <h1 class="text-center text-white" style="font-size:48px">View Courses</h1>
+    <img src="../Images/slider-bottom-pattern.png" alt="/">
+  
+  </div>
+<br>
+<br>
+ 
+<div class="container mt-5">
+  
+
+    <table class="table table-bordered text-center">
+        <tr>
+            <th colspan="11">Course View</th>
+            
+        </tr>
+        <tr>
+            <th>Id</th>
+ 
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>dob</th>
+            <th>gender</th>
+            <th>address</th>
+            <th>course</th>
+            <th>education</th>
+            
+             
+        </tr>
+        
+            <tr>
+                <td><%= c._id %></td>
+                <td><%= c.name %></td>
+                <td><%= c.email %></td>
+                <td><%= c.phone %></td>
+                <td><%= c.dob %></td>
+                <td><%= c.address %></td>
+                <td><%= c.gender %></td>
+                <td><%= c.course %></td>
+                <td><%= c.education %></td>
+                 
+                  
+            </tr>
+        
+
+        
+    </table>
+   
+
+</div>
+
+<br/>
+<br/>
+
+
+
+
+
+<%- include('../footer.ejs')    %>

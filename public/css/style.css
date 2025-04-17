@@ -1,0 +1,251 @@
+/* ---------------------------------------------------------------
+                            General
+------------------------------------------------------------------ */
+
+.b{
+    width:100%;
+    height: 98%;
+     
+    background-image: url('https://alta-tec.net/wp-content/uploads/2021/07/121758908_blue.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+.card
+{
+    width:88%;
+    
+    border-radius:0% 11% 0% 11%;
+}
+.card .h
+{
+    border-radius:none;
+}
+.cl
+{
+    width:100%;
+    height:560px;
+    background-image:linear-gradient(180deg,rgba(211, 202, 202, 0.1),rgba(6, 6, 6, 0.9)),url('/Images/CampusImage-1.avif');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    /* border-radius:0% 0% 30% 30%; */
+}
+.cl input
+{
+    width:30%;
+    position:absolute;
+    top:51%;
+    left:33%;
+    padding-left:8px;
+    height:40px;
+    border-radius:4px;
+    border:none;
+    color: black;
+}
+input[type="submit"]
+{
+   text-transform:capitalize;
+   background-color:rgb(119, 185, 247);
+   color:white;
+}
+::placeholder{
+    color: gray !important;
+    font-weight: lighter;
+}
+
+.h
+{
+    text-align:center;
+    color:white;
+    font-size:28px;
+    padding-top:211px;
+    animation: fadei 2s ease-in-out;
+} 
+@keyframes fadei
+{
+    from
+    {
+        opacity:0.7;
+    }
+    to
+    {
+        opacity:1;
+    }
+}
+.te
+{
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    font-size:40px;
+    font-weight:bold;
+    width:0%;
+    animation: typi 4s steps(20,start) infinite,ti 4s steps(20,end)infinite, bl 0.74s step-end;
+}
+@keyframes typi
+{
+    from
+    {
+        width:0%;
+    }
+    to
+    {
+        width:100%;
+    }
+}
+@keyframes ti
+{
+    from
+    {
+        width:30%;
+    }
+    to
+    {
+        width:0%;
+    }
+}
+/* @keyframes bl
+{
+    0%
+    {
+        border-color:transparent;
+    }
+} */
+/* @keyframes bh
+{
+    100%
+    {
+        border-color: transparent;
+    }
+} */
+a
+{
+    color: white;
+    text-decoration:none;
+}
+ 
+/* ---------------------------------------------------------------
+                         #navbar
+------------------------------------------------------------------ */
+
+#navbar nav{
+    background: rgba(68, 177, 227,0.2) !important;
+    font-weight:bold;
+    transition:all 4s;
+}
+
+ 
+.webViewPosition{
+    text-align: start !important;
+}
+
+/* ---------------------------------------------------------------
+                            #carousel
+------------------------------------------------------------------ */
+
+.carouselHeight{
+    height: 80vh;
+}
+
+/* ---------------------------------------------------------------
+                            #login
+------------------------------------------------------------------ */
+
+.bglogin{
+    background: rgba(251, 250, 250,0.87) !important;
+    border-radius:7px;
+}
+.btn
+{
+    color:black;
+    background-color:white;
+    border:2px solid #1d91d4;
+}
+.btn:hover
+{
+  color:white;
+  background-color:#1d91d4;
+}
+input
+{
+    position:relative;
+} 
+.fa-solid
+{
+    position:absolute;
+     
+
+}
+.fa-user
+{
+    top:38%;
+    left:60%;
+}
+.fa-eye
+{
+    /* position:absolute; */
+    top:54%;
+    left:60%;
+
+}
+.fa-envelope
+{
+    top:46%;
+    left:60%;
+}
+/* ---------------------------------------------------------------
+                            #footer
+------------------------------------------------------------------ */
+
+#footer
+{
+    background: #1d91d4;
+}
+
+#social{
+    background:white;
+}
+#social 
+#detail p{
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------
+                            About
+------------------------------------------------------------------ */
+
+.page-title-area {
+    position: relative;
+    z-index: 1;
+}
+
+.paddingValue label
+{
+    padding: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+                            Media Query
+------------------------------------------------------------------ */
+
+@media (max-width:992px) {
+    #navbarsExample11{
+        justify-content: center !important;
+    }
+
+    .mobileViewButton{
+        background: white !important;
+        margin-bottom: 2rem;
+    }
+}
+
+
+

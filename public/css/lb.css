@@ -1,0 +1,91 @@
+.b
+{
+    position:relative;
+    background-color:#043577;
+    border-radius: 0% 0% 98% 0%;
+}
+.b img
+{
+    position:absolute;
+    top:20%;
+    left:22%;
+    width:68%;
+}
+a
+{
+    color: #3674b5;
+    font-weight:bold;
+}
+.bglogin{
+    background: rgba(251, 250, 250,0.87) !important;
+    border-radius:7px;
+}
+.btn
+{
+    color:black;
+    background-color:#043577;
+    color: white;
+}
+.btn:hover
+{
+  color:white;
+  background-color:#1d91d4;
+}
+input
+{
+    position:relative;
+} 
+.fa-solid
+{
+    position:absolute;
+     
+
+}
+.fa-user
+{
+    top:38%;
+    left:60%;
+}
+.fa-eye
+{
+    /* position:absolute; */
+    top:54%;
+    left:60%;
+
+}
+.fa-envelope
+{
+    top:46%;
+    left:60%;
+}
+#login
+{
+     
+    margin-top:60px;
+}
+ 
+body
+{
+    background-color:rgb(232, 232, 232);
+}
+#login .bv
+{
+    font-size:48px;
+}
+.im
+{
+    width:11%;
+
+}
+.inpu
+{
+    width:100%;
+    position:relative;
+    
+}
+.fa-solid
+{
+    position:absolute;
+    left:90%;
+    transform:translateY(-40%);
+}

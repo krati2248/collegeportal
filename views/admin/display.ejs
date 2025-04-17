@@ -1,0 +1,92 @@
+<%- include('../header.ejs') %>
+     
+    <br>
+    <br>
+    <br>
+    <div class="container">
+    <% if(mesg.length>0){ %>
+        <div class="alert alert-success">
+            <!-- To print -->
+            <%= mesg %>
+        </div>
+        <% } %>
+    </div>
+    <div class="container">
+        <center>
+            <h1>
+                Enrolled Student
+            </h1>
+        </center>
+        <br/>
+        <br/>
+        <table class="table table-striped table-hover text-center">
+
+            <tr>
+                <caption>'</caption>
+
+
+            </tr>
+            <tr class="text-capitalize">
+                <th>Id</th>
+                <th>name</th>
+                <th>EMail</th>
+                <th>Course</th>
+                <th>Status</th>
+                <th>Comment</th>
+                <th></th>
+                <th>Action</th>
+            </tr>
+            <% c.forEach((item)=>{ %>
+                <tr>
+                    <td>
+                        <%= item._id %>
+                    </td>
+                    <td>
+                        <%= item.name %>
+                    </td>
+                    <td>
+                        <%= item.email %>
+                    </td>
+                    <td>
+                        <%= item.course %>
+                    </td>
+                    <td>
+                        <%= item.status %>
+                    </td>
+                    <td>
+                        <form action="/admin/update_status/<%= item._id %>" method="post">
+                            <textarea name="comment" class="form-control"></textarea>
+                            <input type="hidden" name="name" value="<%= item.name %>">
+                            <input type="hidden" name="course" value="<%= item.course %>">
+                            <input type="hidden" name="email" value="<%= item.email %>">
+                    </td>
+                    <td>
+                        <button type="submit" name="status" class="btn btn-success m-1" value="Approved">Approved</button>
+                        <br/>
+                         
+                        <button type="submit" name="status" class="btn btn-danger" value="Reject">Reject</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="/admin/courseView/<%= item._id %>" class="btn btn-primary">View</a>
+                        <a href="/admin/courseEdit/<%= item._id %>" class="btn btn-info text-white">Edit</a>
+                        <a href="/admin/courseDelete/<%= item._id %>" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+                <% }) %>
+
+
+        </table>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <%-include('../footer.ejs') %>

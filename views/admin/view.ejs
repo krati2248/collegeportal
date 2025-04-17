@@ -1,0 +1,44 @@
+<%- include('../header.ejs') %>
+<br>
+<br>
+
+<h1 class="text-center mt-5 text-dark">
+    View Course
+</h1>
+<div class="container mt-5">
+   
+    <table class="table table-bordered text-center">
+        <tr>
+            <th colspan="11">
+                Courses
+            </th>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>dob</th>
+            <th>gender</th>
+            <th>address</th>
+            <th>course</th>
+            <th>education</th>
+             
+        </tr>
+         
+            <td><%= c._id %></td>
+            <td><%= c.name %></td>
+            <td><%= c.email %></td>
+            <td><%= c.phone %></td>
+            <td><%= c.dob %></td>
+            <td><%= c.gender %></td>
+            <td><%= c.address %></td>
+            <td><%= c.course %></td>
+            <td><%= c.education %></td>
+             
+    </table>
+
+</div>
+<br/>
+<br/>
+<%- include('../footer.ejs') %>

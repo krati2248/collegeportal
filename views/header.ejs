@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/inde.css"/>
+     
+</head>
+<body>
+    <div class="container-fluid hebg fw-semibold">
+      <div class="row">
+        <div class="col-lg-5">
+             <!-- <img src="/" alt="#"/> -->
+        </div>
+         
+        <div class="col-lg-2 d-flex gap-3">
+          <i class="fa-solid fa-phone pt-3"></i>
+          <div class="down d-flex flex-column gap-0">
+            <p style="height: 8px;color: white;">Call</p>
+            <p style="height: 11px;color: white;">91 700462181</p>
+          </div>
+        </div>
+        <div class="col-lg-2 d-flex gap-3">
+          <i class="fa-solid fa-envelope pt-3"></i>
+          <div class="down d-flex flex-column gap-0">
+            <p style="height: 8px;color: white;">Email</p>
+            <p style="height: 11px;color: white;">college@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-lg-2 d-flex gap-3">
+          <i class="fa-solid fa-map-pin pt-3"></i>
+          <div class="down d-flex flex-column gap-0">
+            <p style="height: 8px;color: white;">Address</p>
+            <p style="height: 11px;color: white;">down street, near colony</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <% if (role==0) { %>
+    <nav class="navbar navbar-expand-lg fw-bold p-0 sticky">
+        <div class="container">
+           
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto p-0">
+              <li class="nav-item mx-4">
+                <a class="nav-link text-uppercase" href="/home">Home</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-uppercase" href="/about">About Us</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-uppercase" href="/courses">Courses</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link text-uppercase" href="/contact">Contact</a>
+              </li>
+ 
+            </ul>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center p-4 me-4" style="width: auto;height: 48px;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><%= n %></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#"
+                        class="nav-link d-block link-body-emphasis text-decoration-none dropdown-toggle text-light"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="<%= i.url %>" alt="mdo" width="40" height="40"
+                            class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                         
+                        <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                         
+                    </ul>
+                </li>
+        
+                <li class="nav-item bg-warning p-2">
+                   <a href="/logout" class="text-decoration-none text-uppercase  ">logout</a>
+                </li>
+             </ul>
+          </div>
+        </div>
+      </nav>
+      <% } else { %>
+        <nav class="navbar navbar-expand-lg fw-bold p-0 sticky">
+          <div class="container">
+             
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto p-0">
+                 
+   
+              </ul>
+              <ul class="navbar-nav d-flex justify-content-center align-items-center p-4 me-4" style="width: auto;height: 48px;">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><%= n %></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a href="#"
+                          class="nav-link d-block link-body-emphasis text-decoration-none dropdown-toggle text-light"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="<%= i.url %>" alt="mdo" width="40" height="40"
+                              class="rounded-circle">
+                      </a>
+                      <ul class="dropdown-menu text-small">
+                           
+                          <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                           
+                      </ul>
+                  </li>
+          
+                  <li class="nav-item bg-warning p-1">
+                     <a href="/logout" class="text-decoration-none text-uppercase  ">logout</a>
+                  </li>
+               </ul>
+            </div>
+          </div>
+        </nav>
+        <% } %>
+       

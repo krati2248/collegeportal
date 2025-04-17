@@ -1,0 +1,92 @@
+<%- include('../header.ejs') %>
+<br>
+<br/>
+<br/>
+<h1 class="text-center mt-5 text-dark">Course edit</h1>
+
+<div class="container">
+    <form action="/admin/adcourse_updat/<%= c.id %>" method="post" id="courseForm">
+        <!-- Name -->
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" value="<%= c.name %>" name="name" class="form-control" id="name" required />
+            <div class="invalid-feedback">Name is required.</div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" value="<%= c.email %>" name="email" class="form-control" id="email"
+                required />
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <!-- Phone -->
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone No.</label>
+            <input type="text" name="phone" value="<%= c.phone %>" class="form-control" id="phone" maxlength="10"
+                pattern="\d{10}" required />
+            <div class="invalid-feedback">Phone number must be exactly 10 digits.</div>
+        </div>
+
+        <!-- DOB -->
+        <div class="mb-3">
+            <label for="dob" class="form-label">DOB</label>
+            <input type="date" name="dob" value="<%= c.dob %>" class="form-control" id="dob" required />
+            <div class="invalid-feedback">Please select your date of birth.</div>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea name="address" class="form-control" id="address" required>
+                <%= c.address %>
+            </textarea>
+            <div class="invalid-feedback">Address is required.</div>
+        </div>
+
+        <!-- Gender -->
+        <div class="mb-3">
+            <label class="form-label">Gender</label>
+            <div>
+                <input type="radio" name="gender" value="male" id="male" required />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" required />
+                <label for="female">Female</label>
+            </div>
+            <div class="invalid-feedback">Please select your gender.</div>
+        </div>
+
+        <!-- Education -->
+        <div class="mb-3">
+            <label for="education" class="form-label">Education</label>
+            <select name="education" class="form-select" id="education" required>
+                <option value="">Select education</option>
+                <option value="10">10th</option>
+                <option value="12">12th</option>
+            </select>
+            <div class="invalid-feedback">Please select your education level.</div>
+        </div>
+
+        <!-- Course -->
+        <div class="mb-3">
+            <label for="course" class="form-label">Course</label>
+            <input type="text" value="<%= c.course %>" readonly class="form-control" name="course" id="course" />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn text-white w-100 " style="background-color:#043577;">Submit</button>
+    </form>
+
+    
+   
+
+</div>
+<br/>
+<br/>
+
+
+
+
+
+<%- include('../footer.ejs')    %>

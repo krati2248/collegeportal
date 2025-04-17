@@ -1,0 +1,148 @@
+.hebg
+{
+    background-color:#043577;
+}
+.fa-solid
+{
+    color: white;
+}
+ul li a
+{
+    text-decoration:none;
+    color:#043577 !important;
+}
+nav
+{
+    background-color:rgb(240, 238, 238);
+}
+body
+{
+    /* background-color:rgb(240, 238, 238); */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.section
+{
+    background-color:rgb(154, 136, 136);
+    position: relative;padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+/* .tear
+{
+    position:relative;
+    width:100%;
+    height: 100px;
+    overflow:hidden;
+    line-height:0;
+
+}
+.torn-svg
+{
+    display:block;
+    width:100%;
+    height:100%; */
+    /* position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 48px;
+    background:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"><path d="M0,10 Q10,0 20,10 T40,10 T60,10 T80,10 T100,10 L100,20 L0,20 Z" fill="white" stroke="lightgray" stroke-width="0.5"/></svg>') no-repeat;
+    background-size:cover; */
+    /* transform:translateY(-100%); */
+
+/* }
+h1
+{
+    margin-top:0px;
+} */
+.contai
+{
+    background-image:linear-gradient(rgba(4, 53, 119, 0.8), rgba(4, 53, 119, 0.99)),url('../Images/hv.jpg');
+    width:100%;
+    height:460px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+}
+.abcontai
+{
+    background-image:linear-gradient(rgba(4, 53, 119, 0.8), rgba(4, 53, 119, 0.99)),url('../Images/hv.jpg');
+    width:100%;
+    height: 600px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+}
+.contai img
+{
+    width:100%;
+    position:absolute;
+    top:91.1%;
+}
+.abcontai img
+{
+    width: 100%;
+    position:absolute;
+    top:87%;
+}
+.contai h2
+{
+    position:absolute;
+    top:26%;
+    left:2%;
+    color: white;
+    font-size: 48px;
+}
+.contai h4
+{
+    position:absolute;
+    top:40%;
+    left:2%;
+    color: white;
+    font-size: 48px;
+}
+.card img
+{
+    width:100px;
+    height: 100px;
+}
+.card .updt
+{
+    width:140px;
+    height: 94px;
+}
+.cont
+{
+    
+    background-color:#043577;
+    /* padding: 20px; */
+    /* border: 1px solid #ddd; */
+}
+.contd
+{
+    width:100%;
+    height: 400px;
+    background-color:#043577;
+    padding:68px;
+}
+ul
+{
+    list-style: none;
+    line-height: 40px;
+}
+hr .bord
+{
+    border:1px solid white;
+}
+.btcl
+{
+    background-color:#043577;
+    color:white;
+}
+.btn:hover
+{
+    border:0.4px solid #043577;
+    
+}
