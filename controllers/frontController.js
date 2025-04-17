@@ -285,7 +285,7 @@ class frontController {
       text: "heelo", // plain text body
       html: "<p>Hii " +
         name +
-        ',Please click here to <a href="http://localhost:3000/reset-password?token=' +
+        ',Please click here to <a href="https://collegeportal-dlu7.onrender.com/reset-password?token=' +
         token +
         '">Reset</a>Your Password.',
 

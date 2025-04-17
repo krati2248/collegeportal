@@ -9,7 +9,7 @@ passport.use(
     new strategy({
         clientID: id,
         clientSecret: secret,
-        callbackURL: "http://localhost:3000/auth/google/callback"
+        callbackURL: "https://collegeportal-dlu7.onrender.com/auth/google/callback"
         
     },
         async (accessToken, refreshToken, profile, done) => {
