@@ -89,3 +89,17 @@ body
     left:90%;
     transform:translateY(-40%);
 }
+@media (max-width:989px)
+{
+    .b
+    {
+        width:100%;
+        height: 180px;
+        margin-bottom:8px;
+    }
+    .b img
+    {
+        display:none;
+    }
+    
+}

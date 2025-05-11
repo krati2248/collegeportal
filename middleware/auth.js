@@ -5,7 +5,9 @@ const checkAuth = async(req, res, next) =>
 {
     //console.log("Auth");
     const { token } = req.cookies;
+     
     //console.log(token);
+     
     if (!token) {
         req.flash('error', 'Unauthorised user please login')
         res.redirect('/')

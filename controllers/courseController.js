@@ -27,7 +27,7 @@ class courseController {
         try {
             const { name, image, id } = req.Udata;
             const course = await CourseModel.find({ user_id: id })
-            res.render('course/display', { n: name, i: image, c: course, j:0, mesg: req.flash('success'), megs:req.flash('success')})
+            res.render('course/display', { n: name, i: image, c: course, j:0, mesg: req.flash('success'), megs:req.flash('success'), role:0})
         } catch (error) {
             console.log(error)
         }
@@ -39,7 +39,7 @@ class courseController {
             const id = req.params.id;
             const course = await CourseModel.findById(id);
             console.log(course);
-            res.render('course/view', { n: name, i: image, c: course, j:0, role: 'student' })
+            res.render('course/view', { n: name, i: image, c: course, j:0, role:0 })
         } catch (error) {
             console.log(error)
         }
@@ -51,7 +51,7 @@ class courseController {
             const { name, image } = req.Udata;
             const id = req.params.id;
             const course = await CourseModel.findById(id);
-            res.render('course/edit',{n:name,i:image,c:course,j:0});
+            res.render('course/edit',{n:name,i:image,c:course,j:0, role:0});
         }
         catch (error)
         {

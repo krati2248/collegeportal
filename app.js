@@ -9,6 +9,11 @@ var cookieParser = require('cookie-parser');
 const passport = require('passport');
 const strategy = require('passport-google-oauth20').Strategy;
 require('./config/passport');
+
+
+
+ 
+
 //get token of cookie
 app.use(cookieParser());
 
@@ -50,7 +55,6 @@ app.use(flash());
 
 //route load
 app.use(web);
-
 
 app.use(passport.initialize());
 app.use(passport.session());
